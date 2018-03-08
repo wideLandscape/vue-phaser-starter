@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb-base",
+  "extends": "standard",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
@@ -8,7 +8,6 @@
   "env": {
     "browser": true
   },
-  // required to lint *.vue files
   "plugins": [
     "html"
   ],
