@@ -9,7 +9,7 @@ import GameState from './states/Game'
 import config from './config'
 
 export default class Game extends Phaser.Game {
-  constructor() {
+  constructor () {
     const docElement = document.documentElement
     const width = docElement.clientWidth > config.gameWidth
       ? config.gameWidth

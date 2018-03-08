@@ -4,14 +4,14 @@ import Mushroom from '../sprites/Mushroom'
 import { fetchWeather } from '../../api'
 
 export default class extends Phaser.State {
-  init() {
+  init () {
     console.log(this.world)
   }
-  preload() {
+  preload () {
     console.log(this.world)
   }
 
-  create() {
+  create () {
     const bannerText = 'Vue + Phaser + ES6 + Webpack'
     const banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText)
     banner.font = 'Bangers'
@@ -25,7 +25,7 @@ export default class extends Phaser.State {
       game: this.game,
       x: this.world.centerX,
       y: this.world.centerY,
-      asset: 'mushroom',
+      asset: 'mushroom'
     })
 
     this.game.add.existing(this.mushroom)
@@ -36,7 +36,7 @@ export default class extends Phaser.State {
   /**
    * Example for getting data from service
    */
-  async getWeather() {
+  async getWeather () {
     const text = 'Service calling test...'
     const message = this.add.text(this.world.centerX, this.game.height - 150, text)
     message.anchor.setTo(0.5)
@@ -49,7 +49,7 @@ export default class extends Phaser.State {
     }
   }
 
-  render() {
+  render () {
     if (__DEV__) {
       this.game.debug.spriteInfo(this.mushroom, 32, 32)
     }
