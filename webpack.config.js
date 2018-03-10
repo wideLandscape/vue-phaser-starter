@@ -28,7 +28,7 @@ module.exports = {
   watch: true,
   plugins: [
     definePlugin,
-    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor'/* chunkName= */, filename: 'vendor.bundle.js'/* filename= */ }),
+    new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'}),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       template: './src/index.html',
@@ -61,7 +61,7 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'less': 'vue-style-loader!css-loader!less-loader'
+            'scss': 'vue-style-loader!css-loader!sass-loader'
           }
         }
       },

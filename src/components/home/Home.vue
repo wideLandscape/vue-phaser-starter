@@ -20,7 +20,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang='scss'>
 .header {
   top: 0;
   width: 100%;
@@ -31,7 +31,8 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 22px;
-  margin-top: 10px
+  margin-top: 10px;
+  color: 'red';
 }
 
 </style>
