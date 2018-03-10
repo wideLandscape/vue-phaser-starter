@@ -2,18 +2,26 @@
   <div class="container">
     <div>
       <header class="header">{{msg}}</header>
-       <router-link :to="'game'" class="link">Game</router-link>
-     </div>
+      <div id="content"></div>
+    </div>
   </div>
 </template>
 
 <script>
+import Game from './core'
+
 export default {
-  name: 'home',
+  name: 'game',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'second msg',
     }
+  },
+  created() {
+    window.game = new Game()
+  },
+  destroyed() {
+    window.game.destroyed()
   },
   methods: {},
 }
@@ -22,16 +30,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .header {
+  position: absolute;
   top: 0;
   width: 100%;
   text-align: center;
   font-size: 22px;
-}
-.link {
-  width: 100%;
-  text-align: center;
-  font-size: 22px;
-  margin-top: 10px
 }
 
 </style>
