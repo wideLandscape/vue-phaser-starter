@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <header class="header">{{msg}}</header>
+      <router-link :to="'Home'" class="back">Back</router-link>
       <div id="content"></div>
     </div>
   </div>
@@ -21,7 +22,7 @@ export default {
     window.game = new Game()
   },
   destroyed() {
-    window.game.destroyed()
+    window.game.destroy()
   },
   methods: {},
 }
@@ -35,6 +36,16 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 22px;
+}
+.back {
+  position: absolute;
+  top: 0;
+  margin-right: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
+  color: 'red';
 }
 
 </style>
