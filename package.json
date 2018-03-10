@@ -1,8 +1,8 @@
 {
-  "name": "vue-phaser",
+  "name": "vue-sass-phaser",
   "version": "0.0.1",
   "description": "",
-  "author": "ttzshawn@gmail.com",
+  "author": "iano76@gmail.com",
   "main": "index.js",
   "scripts": {
     "dev": "webpack",
