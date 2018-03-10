@@ -10,7 +10,8 @@ export default new VueRouter({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      alias: '/Home'
     },
     {
       path: '/game',
