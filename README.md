@@ -1,3 +1,12 @@
+Original repo: https://github.com/ttzshawn/vue-phaser-starter
+
+## Changes made:
+- modules update: Phaser 2.10.1, vue 2.5.13 and more
+- Standard Style instead AirBnB Style
+- sass instead less
+- split Home route into 2 routes: Home and Game, added simple route-link example 
+- minor fixes
+
 # Vue + Phaser + ES6 + Webpack.
 #### A project to create games with Vue + Phaser + ES6 + Webpack.
 
@@ -20,7 +29,7 @@ Navigate into your workspace directory.
 
 Run:
 
-```git clone https://github.com/ttzshawn/vue-phaser-starter```
+```git clone https://github.com/wideLandscape/vue-phaser-starter```
 
 ## 2. Install node.js and npm:
 
