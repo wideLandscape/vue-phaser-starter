@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+var GoogleFontsPlugin = require('google-fonts-webpack-plugin')
 
 // Phaser webpack config
 var phaserModule = path.join(__dirname, '/node_modules/phaser-ce/')
@@ -45,6 +46,12 @@ module.exports = {
         removeEmptyAttributes: false
       },
       hash: false
+    }),
+    new GoogleFontsPlugin({
+      fonts: [
+        { family: 'Iceland' }
+      ]
+      /* ...options */
     }),
     new BrowserSyncPlugin({
       host: process.env.IP || 'localhost',
